@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row, Spinner } from "react-bootstrap";
 import useAuth from "../../Hooks/useAuth";
 
 const MyOrder = () => {
@@ -44,7 +44,7 @@ const MyOrder = () => {
             {
               orders.map(orderr => <Col key={orderr._id}>
                 <Card>
-                  <Card.Img style={{ height: "400px" }}
+                  <Card.Img style={{ height: "350px" }}
                     variant="top"
                     src={orderr?.img}
                   />
@@ -63,7 +63,7 @@ const MyOrder = () => {
               </Col>)
             }
           </Row>
-        </Container> : <h1>Please wait ...</h1>
+        </Container> : <Spinner animation="border" variant="danger" />
       }
     </>
   );
