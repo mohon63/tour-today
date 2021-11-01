@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
 import AuthProvider from "./AuthProvider/AuthProvider";
 import CreateNewEvent from "./Pages/CreateNewEvent/CreateNewEvent";
 import About from "./Pages/Home/About/About";
