@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Container, Spinner, Table } from 'react-bootstrap';
 import { FaTrash } from "react-icons/fa";
 const Manage = () => {
 
@@ -34,7 +34,7 @@ const Manage = () => {
         <div>
             {
                 (orders.length !== 0) ? <Container>
-                    <h1 className="text-center">User Management</h1>
+                    <h1 className="text-center py-5">User Management</h1>
                     <Table striped bordered hover>
                         <thead>
                             <tr>
@@ -50,12 +50,15 @@ const Manage = () => {
                                     <td>{or?.title}</td>
                                     <td>{or?.name}</td>
                                     <td>{or?.email}</td>
-                                    <td><FaTrash onClick={() => deleteBtn(or._id)} /></td>
+                                    <td style={{ cursor: "pointer" }} className="text-danger text-center"><FaTrash onClick={() => deleteBtn(or._id)} /></td>
                                 </tr>
                             </tbody>)
                         }
                     </Table>
-                </Container> : <h1>Loading...</h1>
+                </Container> :
+                    <div className="text-center py-5">
+                        <Spinner animation="border" variant="danger" />
+                    </div>
             }
         </div>
     );

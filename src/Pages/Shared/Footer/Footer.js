@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="mt-5 bg-dark text-light">
       <Container>
-        <footer className="page-footer font-small blue pt-4">
+        <footer className="page-footer font-small blue pt-4 ">
           <div className="container-fluid text-md-left">
             <div className="row">
               <div className="col-md-3 mt-md-0 mt-3">
@@ -17,7 +17,7 @@ const Footer = () => {
 
               <div className="col-md-3 mb-md-0 mb-3">
                 <h5 className="text-uppercase">Action</h5>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled ">
                   <li><a href="#!">Services</a></li>
                   <li><a href="#!">Feedback</a></li>
                   <li><a href="#!">Make Appointment</a></li>

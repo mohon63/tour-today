@@ -5,9 +5,9 @@ const News = () => {
         <div>
             <div className="container py-5">
                 <h2 className="text-center pb-3">Latest News & Blog</h2>
-                <p className="text-center" style={{ padding: "0 320px" }}>Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
+                <p className="text-center lead px-xl-5">Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
-                    <div className="col">
+                    <div className="col-lg-4 col-sm-6 mb-4">
                         <div className="card shadow-lg">
                             <img src="https://templates.hibootstrap.com/jaunt/default/assets/img/blog/blog5.jpg" className="card-img-top" alt="..." />
                             <div className="card-body">
@@ -16,7 +16,7 @@ const News = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-4 col-sm-6 mb-4">
                         <div className="card shadow-lg">
                             <img src="https://templates.hibootstrap.com/jaunt/default/assets/img/blog/blog2.jpg" className="card-img-top" alt="..." />
                             <div className="card-body">
@@ -25,7 +25,7 @@ const News = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-4 col-sm-6 mb-4">
                         <div className="card shadow-lg">
                             <img src="https://templates.hibootstrap.com/jaunt/default/assets/img/blog/blog6.jpg" className="card-img-top" alt="..." />
                             <div className="card-body">

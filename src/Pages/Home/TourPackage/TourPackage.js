@@ -17,7 +17,7 @@ const TourPackage = () => {
     <>
       {
         (packages.length !== 0) ? <div className="my-5">
-          <div style={{ padding: "0 320px" }} className=" text-center">
+          <div className=" text-center lead px-xl-5">
             <h1>Top Destinations</h1>
             <p>Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
           </div>
@@ -28,6 +28,7 @@ const TourPackage = () => {
                   packages.map(pack => <Col>
                     <Card>
                       <Card.Img
+                        key={pack._id}
                         style={{ height: '350px' }}
                         variant="top"
                         src={pack.img}

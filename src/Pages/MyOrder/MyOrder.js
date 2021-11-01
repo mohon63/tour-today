@@ -63,7 +63,10 @@ const MyOrder = () => {
               </Col>)
             }
           </Row>
-        </Container> : <Spinner animation="border" variant="danger" />
+        </Container> :
+          <div className="text-center py-5">
+            <Spinner animation="border" variant="danger" />
+          </div>
       }
     </>
   );

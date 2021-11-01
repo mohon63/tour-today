@@ -6,9 +6,10 @@ import useAuth from '../../Hooks/useAuth';
 const PrivetRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth()
     if (isLoading) {
-        return <Spinner animation="border" variant="danger" />
-        // <h1>Please wait ...</h1>
-        // <h1 className="text-center">Please Wait...</h1>
+        return <div className="text-center py-5">
+            <Spinner animation="border" variant="danger" />
+        </div>
+
     }
     return (
         <Route
