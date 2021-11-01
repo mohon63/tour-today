@@ -44,7 +44,7 @@ const MyOrder = () => {
             {
               orders.map(orderr => <Col key={orderr._id}>
                 <Card>
-                  <Card.Img
+                  <Card.Img style={{ height: "400px" }}
                     variant="top"
                     src={orderr?.img}
                   />
